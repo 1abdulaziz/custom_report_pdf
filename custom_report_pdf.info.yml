@@ -1,0 +1,4 @@
+name: custom report pdf
+description: report pdf.
+core_version_requirement: ^8 || ^9
+type: module
