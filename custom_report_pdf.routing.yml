@@ -1,7 +1,19 @@
-custom_report_pdf.my_page:
-  path: '/report'
+custom_report_pdf.print:
+  path: '/reportInfotopdf'
   defaults:
     _controller: '\Drupal\custom_report_pdf\Controller\ReportPdfController::reportPdf'
-    _title: 'My first page in D8'
+    _title: ''
   requirements:
     _permission: 'access content'
+  options:
+    no_cache: 'TRUE'
+
+custom_report_pdf.my_page:
+  path: '/reportinfo'
+  defaults:
+    _controller: '\Drupal\custom_report_pdf\Controller\ReportPdfController::reportInfo'
+    _title: ''
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: 'TRUE'

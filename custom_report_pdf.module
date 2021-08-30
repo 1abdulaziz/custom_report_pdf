@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function custom_report_pdf_theme($existing, $type, $theme, $path) {
+    return [
+      'reportinfo' => [
+        'variables' => [
+          'data' => NULL,
+        ],
+      ],
+    ];
+  }
+  
